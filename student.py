@@ -6,6 +6,8 @@ class Student:
         self.__age = age
         self.__cohort_number = cohort_number
 
+    def __str__(self):
+        return(f"{self.full_name} is {self.age} years old and is studying in cohort {self.cohort_number}.")
 
     @property
     def first_name(self):
@@ -74,4 +76,4 @@ christian = Student("Christian", "Pippen", 21, 36)
 
 christian.last_name = "Pippin"
 
-print(christian.full_name)
+print(christian)
